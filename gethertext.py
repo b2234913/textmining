@@ -9,6 +9,7 @@ import gensim
 from gensim.models import word2vec
 import sys  
 
+
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
