@@ -23,7 +23,7 @@ tfidf = vectorizer.fit_transform(corpus)
 print tfidf.shape
 words = vectorizer.get_feature_names()
 
-with open(form + '_data_ifidf.csv','wb') as myfile:
+with open(form + 'test_data_ifidf.csv','wb') as myfile:
 	for i in xrange(len(corpus)):
 		a = []
 		b = []
