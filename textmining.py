@@ -18,6 +18,9 @@ def main():
 		#print(unicode_row[1])
 			seg_list = jieba.cut(unicode_row[1], cut_all=False)
 			x = ' '.join(seg_list)
+			seg_list2 = jieba.cut(unicode_row[2], cut_all=False)
+			#x = x + ' '.join(seg_list2)
+			print(x)
 			string = re.sub("[\s+\.\!\/_,$%^*()+\"\']+|[+——！，。？、~@#￥%……&*（）]+".decode("utf8"), " ".decode("utf8"),x)	
 			print(string)
 			
